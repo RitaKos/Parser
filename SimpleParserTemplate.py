@@ -24,6 +24,7 @@ for item in news:
         )
 
 # создаем файл для записи
+
 file = open('file_name', mode='w', encoding='UTF-8')
 for match in results:
     file.write(f'{match["play_name"]}\nПодобнее о матче: {match["link"]}\n\n')
